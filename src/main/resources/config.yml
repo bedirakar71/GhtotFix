@@ -1,0 +1,6 @@
+ping-multiplier: 1.0
+extra-wait-ms: 100
+min-wait-ms: 100
+max-wait-ms: 600
+min-wait-ticks: 2
+debug: false
