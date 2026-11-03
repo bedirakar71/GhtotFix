@@ -1,0 +1,27 @@
+name: Build UltraTotemFix v3.0
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Build with Maven
+      run: mvn clean package
+
+    - name: Upload Artifact (.jar)
+      uses: actions/upload-artifact@v4
+      with:
+        name: UltraTotemFix-3.0.0
+        path: target/UltraTotemFix-3.0.0.jar
+        
