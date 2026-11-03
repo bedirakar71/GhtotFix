@@ -1,0 +1,6 @@
+name: UltraTotemFix
+version: 3.0.0
+main: com.omdmrotat.totemghostfix.UltraTotemFix
+api-version: '1.21'
+description: Ping gecikmelerine karşı saf ghost totem koruması.
+authors: [Admin]
